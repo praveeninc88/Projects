@@ -1,6 +1,4 @@
 # Title: MLR Implementation using Gradient Descent 
-# Author: Rishabh Malhotra
-# All Rights Reserved by Datum Guy & the Author
 
 import csv
 import numpy as np
