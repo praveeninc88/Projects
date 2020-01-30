@@ -105,6 +105,39 @@ You work through the application of the update rule for gradient descent. You al
 
 
 ## 5) Logistic Regression project - IRIS Dataset predicting the plant 
+
+### The Problem Statement
+
+The iris dataset contains the following data
+- 50 samples of 3 different species of iris (150 samples total)
+- Measurements: sepal length, sepal width, petal length, petal width
+- The format for the data: (sepal length, sepal width, petal length, petal width)
+
+We need to be able to predict the sample given using the characteristics studied of the data we have in hand.
+
+### Implementation
+
+1) Logistic Regression from scratch
+- use a sigmoid function to output a result between 0 & 1
+      return 1 / (1 + np.exp(-z))
+- use a loss function with parameters (weights - theta) to compute the best value for them
+      initially pick random values
+      return (-y * np.log(h) - (1 - y) * np.log(1 - h)).mean()
+- gradient descent
+      gradient = np.dot(X.T, (h - y)) / y.shape[0]
+- predictions
+      def predict_probs(X, theta): return sigmoid(np.dot(X, theta))
+
+2) Logistic Regression from scikit-learn
+      docs: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+      much faster than the scratch implementation
+
+
+
+### Learning:
+
+
+
 ## 6) KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
 ## 7) Insurance subscription prediction using SVC, KNN and Logistic Regression's F1 scores
 
