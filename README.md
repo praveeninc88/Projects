@@ -2,7 +2,7 @@
 Projects in Machine Learning
 
 - Big mart daily data - Sales prediction  
-- EDA Project - Predicting the Quality of Wine
+- Exploratory Data Analysis Project - Predicting the Quality of Wine
 - Simple Linear Regression to predict the time when Geyser will excite - Old water Geyser Dataset
 - Linear Regression project - Multiple Linear Regression using Gradient Descent method
 - Logistic Regression project - IRIS Dataset predicting the plant 
