@@ -21,10 +21,11 @@ It is the perfect project for learning Data Analytics. The project helps the use
 In this project we need to predict the quality of Red wine in a simple non technical way. We would start with exploring the attributes and then doing outlier detection and elimination basis their requirement. 
 
 ### Learning:
-This project helps to dig deeper and understanding about the two broad kinds of projects namely - Regression and Classification.
-How to evaluate the models and figure the bext one to implement.
-Splitting the data for testing and Training.
-Baselining and optimization
+This project helps to dig deeper and understanding about the two broad kinds of projects namely 
+- Regression and Classification.
+- How to evaluate the models and figure the bext one to implement.
+- Splitting the data for testing and Training.
+- Baselining and optimization
 
 ## Simple Linear Regression to predict the time when Geyser will excite - Old water Geyser Dataset
 ## Linear Regression project - Multiple Linear Regression using Gradient Descent method
