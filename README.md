@@ -1,12 +1,12 @@
 # Projects in Machine Learning
 
-## 1) Big mart daily data - Sales prediction  
-## 2) Exploratory Data Analysis Project - Predicting the Quality of Wine
-## 3) Simple Linear Regression to predict the time when Geyser will excite - Old Faithful Geyser Dataset
-## 4) Linear Regression project - Multiple Linear Regression using Gradient Descent method
-## 5) Logistic Regression project - IRIS Dataset predicting the plant 
-## 6) KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
-## 7) Insurance subscription prediction using SVC, KNN and Logistic Regression's F1 scores
+#### 1) Big mart daily data - Sales prediction  
+#### 2) Exploratory Data Analysis Project - Predicting the Quality of Wine
+#### 3) Simple Linear Regression to predict the time when Geyser will excite - Old Faithful Geyser Dataset
+#### 4) Linear Regression project - Multiple Linear Regression using Gradient Descent method
+#### 5) Logistic Regression project - IRIS Dataset predicting the plant 
+#### 6) KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
+#### 7) Insurance subscription prediction using SVC, KNN and Logistic Regression's F1 scores
 
 
 
@@ -25,7 +25,7 @@ It is the perfect project for learning Data Analytics. The project helps the use
 - Creating Models
 
 
-## Exploratory Data Analysis Project - Predicting the Quality of Wine
+## 2) Exploratory Data Analysis Project - Predicting the Quality of Wine
 
 ### The Problem Statement
 
