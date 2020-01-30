@@ -119,44 +119,118 @@ We need to be able to predict the sample given using the characteristics studied
 
 1) Logistic Regression from scratch
 - use a sigmoid function to output a result between 0 & 1
-      -- return 1 / (1 + np.exp(-z))
+      - return 1 / (1 + np.exp(-z))
 - use a loss function with parameters (weights - theta) to compute the best value for them
-      ## initially pick random values
-      ## return (-y * np.log(h) - (1 - y) * np.log(1 - h)).mean()
+      - initially pick random values
+      - return (-y * np.log(h) - (1 - y) * np.log(1 - h)).mean()
 - gradient descent
-      gradient = np.dot(X.T, (h - y)) / y.shape[0]
+      - gradient = np.dot(X.T, (h - y)) / y.shape[0]
 - predictions
-      def predict_probs(X, theta): return sigmoid(np.dot(X, theta))
+      - def predict_probs(X, theta): return sigmoid(np.dot(X, theta))
 
 2) Logistic Regression from scikit-learn
-      docs: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
-      much faster than the scratch implementation
-
-
+      - docs: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+      - much faster than the scratch implementation
 
 ### Learning:
 
-
+- Features and response are separate objects
+- Features and response should be numeric
+- Features and response should be NumPy arrays
+- Features and response should have specific shapes
 
 ## 6) KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
 
-
-
+### About the dataset
 
 The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
 
 It includes three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
 
 The columns in this dataset are:
+- Id
+- SepalLengthCm
+- SepalWidthCm
+- PetalLengthCm
+- PetalWidthCm
+- Species
 
-Id
-SepalLengthCm
-SepalWidthCm
-PetalLengthCm
-PetalWidthCm
-Species
+### The problem statement
+
+Predicting the class of flower in IRIS dataset using KNN classifier.
+
+- Finding the optimum values of hyperparameter k for knn classifier.
+- Verifying the best accuracy using Cross Validation.
+- Checking the scope of improvisation by using different distances of similarity.
+
+### Learning
+
+We will understand the use of KNN algorithm and how do we find the value of K to get to the exact data 
+
+ K = 9 was chosen after doing hyperparameter tuning using cross-validation on the training set and applying the one standard error rule.
+
+
 ## 7) Insurance subscription prediction using SVC, KNN and Logistic Regression's F1 scores
 
+### The Problem Statement
+
+In this problem we will need to find out the users who will subscribe to the insurance plans and do renewals of the existing plans using the various models and their evalaution metrices.
+
+### Evaluation Metrices
+
+##### What is Sensitivity, Specificity and Detection Rate?
+
+Sensitivity is the percentage of actual 1’s that were correctly predicted. It shows what percentage of 1’s were covered by the model.
+
+The total number of 1’s is 71 out of which 70 was correctly predicted. So, sensitivity is 70/71 = 98.59%
+
+Sensitivity matters more when classifying the 1’s correctly is more important than classifying the 0’s. Just like what we need here precition case, where you don’t want to miss out any Non subscribers to be classified as ‘Subscribers’.
+
+Likewise, Specificity is the proportion of actual 0’s that were correctly predicted. So in this case, it is 122 / (122+11) = 91.73%.
+
+Specificity matters more when classifying the 0’s correctly is more important than classifying the 1’s.
+
+Maximizing specificity is more relevant in cases like spam detection, where you strictly don’t want genuine messages (0’s) to end up in spam (1’s).
+
+Detection rate is the proportion of the whole sample where the events were detected correctly. So, it is 70 / 204 = 34.31%.
+
+You can see further explanation of all the metrics in this wiki link.
+https://en.wikipedia.org/wiki/Confusion_matrix
+
+
+##### What is Precision, Recall and F1 Score?
+Another great way to know the goodness of the model is using the Precision, Recall and the F1 Score.
+
+The approach here is to find what percentage of the model’s positive (1’s) predictions are accurate. This is nothing but Precision.
+
+Let’s suppose you have a model with high precision, I also want to know what percentage of ALL 1’s were covered. This can be captured using Sensitivity.
+
+But in this context, it is known as Recall. Just because, it is customary to call them together as ‘Precision and Recall’.
+
+A high precision score gives more confidence to the model’s capability to classify 1’s. Combining this with Recall gives an idea of how many of the total 1’s it was able to cover.
+
+A good model should have a good precision as well as a high recall. So ideally, I want to have a measure that combines both these aspects in one single metric – the F1 Score.
+
+F1 Score = (2 * Precision * Recall) / (Precision + Recall)
+
+These three metrics can be computed using the InformationValue package. But you need to convert the factors to numeric for the functions to work as intended.
+
+# devtools::install_github("selva86/InformationValue")
+library(InformationValue)
+actual <- as.numeric(as.character(y_act))
+pred <- as.numeric(as.character(y_pred))
+Now the factors are converted to numeric. Let's compute the precision, recall and the F1 Score.
+
+recall(actual, pred)
+#> 0.9859155
+
+precision(actual, pred)
+#> 0.8641975
+
+fscore(actual, pred)
+#> 0.9210526
+
+You have an F1 Score of 92 percent. That's pretty good.
 
 
 
