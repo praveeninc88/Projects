@@ -35,14 +35,14 @@ In this project we need to predict the quality of Red wine in a simple non techn
 
 - This project helps to dig deeper and helps in understanding about the two broad kind of projects namely Regression and Classification.
 - How to evaluate the models and figure the best one to implement.
-- Splitting the data for testing and Training.
+- Splitting the data for Testing and Training.
 - Baselining and optimization
 
 ## 3) Simple Linear Regression to predict the time when Geyser will excite - Old Faithful Geyser Dataset
 
 ### The Problem Statement
 
-The scientists, geologists and government authorities have the interest and have engaged in the observations and analysis of the geysers and eruptions throughout several decades. Old Faithful is one of the most studied and observed geysers although it is not the largest geyser active currently. In this approach, Old Faithful Geyser data is being analyzed with a machine learning approach to support the observations for predicting future behavior of not only geysers, but also the Earth.
+The scientists, geologists and government authorities have the interest and have engaged in the observations and analysis of the geysers and eruptions throughout several decades. Old Faithful is one of the most studied and observed geysers although it is not the largest geyser active currently. In this approach, Old Faithful Geyser data is being analyzed with a machine learning approach to support the observations for predicting future behaviour of not only geysers, but also the Earth.
 
 • The dataset of Old Faithful that has been occupied here was obtained from:
 
@@ -72,13 +72,13 @@ The value that has been assigned for K is 2 to perform K-means algorithm, and tw
 
 The two clusters in data interprets that there are two series of eruptions in Old Faithful geyser; eruptions with short intervals and eruptions with long intervals (more than 3 minutes). The eruptions with long intervals last longer than short interval eruptions, because longer eruptions require more effort than short interval discharges. Furthermore, the geyser is having an increasing number of long eruptions than shorter eruptions.
 
-According to the above details, it can be assumed that Old Faithful geyser has varying behavior upon eruption in different situations. These conditions including atmospheric temperature, availability of water, wind speed, depth of the conduit, distant earthquakes should be analyzed further for authenticating those variations. The approach that is implemented in this scenario with K-means could provide predictions for future eruptions in terms of their duration and waiting time.
+According to the above details, it can be assumed that Old Faithful geyser has varying behaviour upon eruption in different situations. These conditions including atmospheric temperature, availability of water, wind speed, depth of the conduit, distant earthquakes should be analyzed further for authenticating those variations. The approach that is implemented in this scenario with K-means could provide predictions for future eruptions in terms of their duration and waiting time.
 
 ## 4) Linear Regression project - Multiple Linear Regression using Gradient Descent method
 
 ### The Problem Statement
 
-In this project you need to find the  loss function using the Gradient descent method and evaluate the exact point or range where the loss is minimum.
+In this project you need to find the  loss function using the Gradient Descent method and evaluate the exact point or range where the loss is minimum.
 
 ### Learning:
 
@@ -108,7 +108,7 @@ You work through the application of the update rule for gradient descent. You al
 
 ### The Problem Statement
 
-The iris dataset contains the following data
+The IRIS dataset contains the following data
 - 50 samples of 3 different species of iris (150 samples total)
 - Measurements: sepal length, sepal width, petal length, petal width
 - The format for the data: (sepal length, sepal width, petal length, petal width)
@@ -143,9 +143,9 @@ We need to be able to predict the sample given using the characteristics studied
 
 ### About the IRIS Dataset
 
-The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
+The IRIS dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
 
-It includes three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
+It includes three IRIS species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
 
 The columns in this dataset are:
 - Id
@@ -159,7 +159,7 @@ The columns in this dataset are:
 
 Predicting the class of flower in IRIS dataset using KNN classifier.
 
-- Finding the optimum values of hyperparameter k for knn classifier.
+- Finding the optimum values of hyperparameter K for KNN classifier.
 - Verifying the best accuracy using Cross Validation.
 - Checking the scope of improvisation by using different distances of similarity.
 
@@ -174,7 +174,7 @@ We will understand the use of KNN algorithm and how do we find the value of K to
 
 ### The Problem Statement
 
-In this problem we will need to find out the users who will subscribe to the insurance plans and do renewals of the existing plans using the various models and their evalaution metrices.
+In this problem we will need to find out the users who will subscribe to the insurance plans and do renewals of the existing plans using the various models and their evaluation metrices.
 
 ### Evaluation Metrices
 
@@ -184,7 +184,7 @@ Sensitivity is the percentage of actual 1’s that were correctly predicted. It 
 
 The total number of 1’s is 71 out of which 70 was correctly predicted. So, sensitivity is 70/71 = 98.59%
 
-Sensitivity matters more when classifying the 1’s correctly is more important than classifying the 0’s. Just like what we need here precition case, where you don’t want to miss out any Non subscribers to be classified as ‘Subscribers’.
+Sensitivity matters more when classifying the 1’s correctly is more important than classifying the 0’s. Just like what we need here in insurance case, where you don’t want to miss out any Non subscribers to be classified as ‘Subscribers’.
 
 Likewise, Specificity is the proportion of actual 0’s that were correctly predicted. So in this case, it is 122 / (122+11) = 91.73%.
 
