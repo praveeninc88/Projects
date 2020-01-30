@@ -1,13 +1,13 @@
-# Projects
-Projects in Machine Learning
+## Projects
+#Projects in Machine Learning
 
 - Big mart daily data - Sales prediction  
 
-The Problem Statement
+#The Problem Statement
 
 The data experts at BigMart have collected sales data for more than 1000 products across 10 different stores in various cities. The aim is to build a predictive model to find out the sales of each product at a particular store. Create a model by which BigMArt can analyse and predict the outlet production sales
 
-Learning:
+#Learning:
 It is the perfect project for learning Data Analytics. The project helps the user to know 
 Data Exploration
 Data Cleaning
