@@ -115,7 +115,7 @@ The iris dataset contains the following data
 
 We need to be able to predict the sample given using the characteristics studied of the data we have in hand.
 
-### Implementation
+### Implementation of Logistic Regression
 
 1) Logistic Regression from scratch
 - use a sigmoid function to output a result between 0 & 1
@@ -141,7 +141,7 @@ We need to be able to predict the sample given using the characteristics studied
 
 ## 6) KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
 
-### About the dataset
+### About the IRIS Dataset
 
 The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
 
@@ -155,7 +155,7 @@ The columns in this dataset are:
 - PetalWidthCm
 - Species
 
-### The problem statement
+### The Problem Statement
 
 Predicting the class of flower in IRIS dataset using KNN classifier.
 
@@ -194,11 +194,8 @@ Maximizing specificity is more relevant in cases like spam detection, where you 
 
 Detection rate is the proportion of the whole sample where the events were detected correctly. So, it is 70 / 204 = 34.31%.
 
-You can see further explanation of all the metrics in this wiki link.
-https://en.wikipedia.org/wiki/Confusion_matrix
-
-
 ##### What is Precision, Recall and F1 Score?
+
 Another great way to know the goodness of the model is using the Precision, Recall and the F1 Score.
 
 The approach here is to find what percentage of the model’s positive (1’s) predictions are accurate. This is nothing but Precision.
@@ -215,7 +212,7 @@ F1 Score = (2 * Precision * Recall) / (Precision + Recall)
 
 These three metrics can be computed using the InformationValue package. But you need to convert the factors to numeric for the functions to work as intended.
 
-# devtools::install_github("selva86/InformationValue")
+devtools::install_github("InformationValue")
 library(InformationValue)
 actual <- as.numeric(as.character(y_act))
 pred <- as.numeric(as.character(y_pred))
@@ -230,8 +227,13 @@ precision(actual, pred)
 fscore(actual, pred)
 #> 0.9210526
 
-You have an F1 Score of 92 percent. That's pretty good.
+You have an F1 Score of 92 percent. That's pretty good basis your model parameters.
 
+### Summary
+
+We use the three models and use their Evaluation metrices to figure out which model gives the closest prediction for the subscriptions to happen for the business on the insurance data.
+
+Using the F1 score data of the three models we found the data of Logistic Regression and Support Vector Classifier model was having the highest and was recommended to be used to predict the users who will subscriber and do renewals for the business.
 
 
 
