@@ -1,6 +1,16 @@
 # Projects in Machine Learning
 
-## Big mart daily data - Sales prediction  
+## 1) Big mart daily data - Sales prediction  
+## 2) Exploratory Data Analysis Project - Predicting the Quality of Wine
+## 3) Simple Linear Regression to predict the time when Geyser will excite - Old Faithful Geyser Dataset
+## 4) Linear Regression project - Multiple Linear Regression using Gradient Descent method
+## 5) Logistic Regression project - IRIS Dataset predicting the plant 
+## 6) KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
+## 7) Insurance subscription prediction using SVC, KNN and Logistic Regression's F1 scores
+
+
+
+## 1) Big mart daily data - Sales prediction  
 
 ### The Problem Statement
 
@@ -28,7 +38,7 @@ In this project we need to predict the quality of Red wine in a simple non techn
 - Splitting the data for testing and Training.
 - Baselining and optimization
 
-## Simple Linear Regression to predict the time when Geyser will excite - Old Faithful Geyser Dataset
+## 3) Simple Linear Regression to predict the time when Geyser will excite - Old Faithful Geyser Dataset
 
 ### The Problem Statement
 
@@ -64,17 +74,39 @@ The two clusters in data interprets that there are two series of eruptions in Ol
 
 According to the above details, it can be assumed that Old Faithful geyser has varying behavior upon eruption in different situations. These conditions including atmospheric temperature, availability of water, wind speed, depth of the conduit, distant earthquakes should be analyzed further for authenticating those variations. The approach that is implemented in this scenario with K-means could provide predictions for future eruptions in terms of their duration and waiting time.
 
-## Linear Regression project - Multiple Linear Regression using Gradient Descent method
+## 4) Linear Regression project - Multiple Linear Regression using Gradient Descent method
 
 ### The Problem Statement
 
+In this project you need to find the  loss function using the Gradient descent method and evaluate the exact point or range where the loss is minimum.
 
 ### Learning:
 
+In this project you can learn how the gradient descent algorithm works and implement it from scratch in python. First we look at what linear regression is, then we define the loss function. We learn how the gradient descent algorithm works and finally we will implement it on a given data set and make predictions.
 
-## Logistic Regression project - IRIS Dataset predicting the plant 
-## KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
-## Insurance subscription prediction using SVC, KNN and Logistic Regression's F1 scores
+#### Loss Function
+The loss is the error in our predicted value of m and c. Our goal is to minimize this error to obtain the most accurate value of m and c.
+We will use the Mean Squared Error function to calculate the loss. 
+
+#### The Gradient Descent Algorithm
+Gradient descent is an iterative optimization algorithm to find the minimum of a function. Here that function is our Loss Function.
+
+##### Understanding Gradient Descent
+Imagine a valley and a person with no sense of direction who wants to get to the bottom of the valley. He goes down the slope and takes large steps when the slope is steep and small steps when the slope is less steep. He decides his next position based on his current position and stops when he gets to the bottom of the valley which was his goal.
+
+Gradient descent is one of the simplest and widely used algorithms in machine learning, mainly because it can be applied to any function to optimize it. Learning it lays the foundation to mastering machine learning.
+
+
+### Summary
+In this project you will discover the simple linear regression model and how to train it using stochastic gradient descent.
+
+You work through the application of the update rule for gradient descent. You also learned how to make predictions with a learned linear regression model.
+
+
+
+## 5) Logistic Regression project - IRIS Dataset predicting the plant 
+## 6) KNN Implementation project on IRIS Dataset - Predict the plant with its parameters
+## 7) Insurance subscription prediction using SVC, KNN and Logistic Regression's F1 scores
 
 
 
